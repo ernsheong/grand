@@ -1,5 +1,7 @@
 # Grand
 
+[![GoDoc](https://godoc.org/github.com/ernsheong/grand?status.svg)](http://godoc.org/github.com/ernsheong/grand)
+
 Grand is a Go random string generator.
 
 ## Installation
