@@ -10,7 +10,7 @@ Grand is a Go random string generator.
 
 ## Usage
 
-1. IMPORTANT. Seed `rand` first to ensure you don't get the same number on every code run (initialize):
+1. **IMPORTANT.** Seed `rand` first to ensure you don't get the same string on every code run (initialize):
 
     ```go
     rand.Seed(time.Now().UTC().UnixNano())
@@ -31,6 +31,7 @@ Grand is a Go random string generator.
 
 ## Concurrency
 
+From the `math/rand` [docs](https://golang.org/pkg/math/rand/):
 > The default Source is safe for concurrent use by multiple goroutines
 
 `grand` uses the default Source, and hence is safe to be called from multiple goroutines, at a slight performance penalty. See https://stackoverflow.com/a/31832326/1161743 for details.
