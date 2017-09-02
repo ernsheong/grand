@@ -2,7 +2,7 @@ package grand
 
 import "math/rand"
 
-// Credits to icza of https://stackoverflow.com/a/31832326/1161743 for original code.
+// Credits to icza of https://stackoverflow.com/a/31832326/1161743 for the original code.
 
 const letterBytes = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
@@ -12,7 +12,8 @@ const (
 	letterIdxMax  = 63 / letterIdxBits   // # of letter indices fitting in 63 bits
 )
 
-// GenerateRandomString generates a length-n alpha string
+// GenerateRandomString generates a length-n random string from the character set "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ".
+// Be sure to seed the random function using rand.Seed to initialize the generator first.
 func GenerateRandomString(n int) string {
 	b := make([]byte, n)
 
