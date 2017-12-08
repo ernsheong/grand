@@ -22,14 +22,14 @@ Grand is a Go random string generator.
     rand.Seed(time.Now().Unix())
     ```
 
-1. Generate your random string, given a length parameter `n`.
+1. Generate your random string, given a length parameter `n`:
 
     ```go
     grand.GenerateRandomString(32)
     // returns "qzrWbaoLTVpQoottZyPFfNOoMioXHRuF"
     ```
 
-1. Generate random string from other character sets
+1. Generate random string from other character sets:
 
     ```go
     gen := grand.NewGenerator(grand.CharSetBase62)
