@@ -29,6 +29,14 @@ Grand is a Go random string generator.
     // returns "qzrWbaoLTVpQoottZyPFfNOoMioXHRuF"
     ```
 
+1. Generate random string from other character sets
+
+    ```go
+    gen := grand.NewGenerator(grand.CharSetBase62)
+	gen.GenerateRandomString(20)
+    // returns "q3rWba2LTVpQ4ottZyPv"
+    ```
+
 ## Concurrency
 
 From the `math/rand` [docs](https://golang.org/pkg/math/rand/):
