@@ -46,4 +46,4 @@ From the `math/rand` [docs](https://golang.org/pkg/math/rand/):
 
 ## Credits
 
-I claim no credit for the code here. It's originally from user icza in https://stackoverflow.com/a/31832326/1161743.
+I claim no credit for the generation logic. It's originally from user icza in https://stackoverflow.com/a/31832326/1161743.
