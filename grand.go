@@ -6,8 +6,10 @@ import "math/rand"
 
 // Character sets for random string generation
 const (
-	CharSetEnglishAlphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-	CharSetBase62          = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+	CharSetEnglishAlphabet          = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+	CharSetEnglishAlphabetLowercase = "abcdefghijklmnopqrstuvwxyz"
+	CharSetEnglishAlphabetUppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+	CharSetBase62                   = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 )
 
 var defaultLetterBytes = CharSetEnglishAlphabet
